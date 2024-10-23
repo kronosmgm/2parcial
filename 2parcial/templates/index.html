@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Añadir Inscrito{% endblock %}
+{% block content %}
+<center><h1>LISTA DE PRODUCTOS</h1></center>
+<ul>
+    
+    <br>
+    <center><table border="1" WIDTH="1000">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>F Vencimiento</th>
+            <th>precio</th>
+            <th></th>
+            <th></th>
+        </tr>
+        {% for item in contactos %}    
+        <tr>
+            <td>{{ item.id}} </td>
+            <td>{{ item.nombre }} </td>
+            <td>{{ item.cantidad }} </td>
+            <td>{{ item.precio }} .Bs</td>
+            <td>{{ item.f_venc }} </td>
+            <td>{{ item.categoria }} </td>
+            <td><a href="{{ url_for('editar',id=item.id)}}">Editar</a></td>
+            <td>
+                <form action="{{ url_for('eliminar',id=item.id)}}" method="POST">
+                    <input type="submit" value="eliminar">
+                </form>
+
+            </td>
+        </tr>
+        {% endfor %}
+    </table></center><br>
+    <center><a href="{{ url_for('nuevo') }}" class="btn">NUEVO PRODUCTO</a>
+</ul>
+{% endblock %}

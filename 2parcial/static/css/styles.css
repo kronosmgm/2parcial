@@ -1,0 +1,99 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e8f5e9; /* Verde claro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background: #2e7d32; /* Verde oscuro */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Secciones principales */
+main {
+    padding: 2rem;
+    background: #e8f5e9; /* Verde claro */
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2, h3 {
+    color: #2e7d32; /* Verde oscuro */
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #2e7d32; /* Verde oscuro */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background: #388e3c; /* Verde medio */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el ratón */
+}
+
+/* Pie de página */
+footer {
+    background: #2e7d32; /* Verde oscuro */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+select {
+    padding: 5px;
+    border: 2px solid #2e7d32; /* Verde oscuro */
+    border-radius: 5px;
+    background-color: #e8f5e9; /* Verde claro */
+    color: #2e7d32; /* Texto verde oscuro */
+    font-size: 1rem;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #2e7d32; /* Verde oscuro */
+    margin-right: 10px;
+}

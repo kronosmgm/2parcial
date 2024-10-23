@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %} NUEVO PRODUCTO{% endblock %}
+{% block content %}
+    <CENTER><h1>REGISTRAR NUEVO PRODUCTO</h1>
+    <form action="{{ url_for('nuevo')}}" method="POST">
+        Nombre: <input type="text" name="nombre" required><br><br>
+        Cantidad: <input type="text" name="cantidad" required><br><br>
+        Precio: <input type="text" name="precio" required>.bs<br><br>
+        Fecha Vencimiento: <input type="date" name="f_venc" required><br><br>
+        Categoria: <input type="text" name="categoria" required><br><br>
+        <button type="submit" class="btn">REGISTRAR</button>
+    </form>
+</CENTER>
+{% endblock %}

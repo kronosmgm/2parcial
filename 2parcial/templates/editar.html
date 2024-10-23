@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Editar{% endblock %}
+{% block content %}
+    <center>
+    <h1>Editar producto</h1>
+    <form action="{{ url_for('editar',id=contacto.id)}}" method="POST">
+        Nombre: <input type="text" name="nombre" value="{{ contacto['nombre'] }}" required><br><br>
+        Cantidad: <input type="text" name="cantidad" value="{{ contacto['cantidad']}}" required><br><br>
+        Precio: <input type="text" name="precio" value="{{contacto['precio']}}" required><br><br>
+        Fecha Vencimiento: <input type="date" name="f_venc" value="{{ contacto['f_venc']}}" required><br><br>
+        Categoria: <input type="text" name="categoria" value="{{contacto['categoria']}}" required><br><br>
+        <button type="submit" class="btn">ENVIAR</button>
+    </form>
+</center>
+{% endblock %}
